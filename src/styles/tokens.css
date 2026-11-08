@@ -1,0 +1,58 @@
+:root {
+  /* Core Palette */
+  --bg-primary: #080808;
+  --bg-secondary: #0e0e10;
+  --bg-surface: #141417;
+  --bg-surface-elevated: #1b1b1f;
+  --bg-surface-hover: #232328;
+
+  /* Borders & Dividers */
+  --border-subtle: #1f1f23;
+  --border-graphite: #2a2a30;
+  --border-bright: #3d3d46;
+  --border-silver: rgba(191, 194, 199, 0.28);
+  --border-silver-strong: #bfc2c7;
+
+  /* Metallic Accents */
+  --metallic-silver: #bfc2c7;
+  --metallic-chrome: #e6e8ec;
+  --metallic-pure-white: #ffffff;
+  --metallic-dark: #222226;
+  --metallic-gradient: linear-gradient(135deg, #e6e8ec 0%, #bfc2c7 40%, #7d8087 100%);
+  --metallic-glow: radial-gradient(circle, rgba(191, 194, 199, 0.08) 0%, transparent 70%);
+  --metallic-sheen: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+
+  /* Typography Colors */
+  --text-primary: #f5f5f5;
+  --text-secondary: #a3a3a8;
+  --text-muted: #6e6e76;
+  --text-dim: #44444c;
+
+  /* Font Families */
+  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Motion & Easing */
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-linear: cubic-bezier(0, 0, 1, 1);
+  --duration-fast: 180ms;
+  --duration-normal: 360ms;
+  --duration-slow: 700ms;
+  --duration-cinematic: 1200ms;
+
+  /* Spacing & Layout */
+  --max-width: 1360px;
+  --section-spacing-y: clamp(5rem, 10vw, 9rem);
+  --container-padding: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    --duration-cinematic: 0ms;
+  }
+}
