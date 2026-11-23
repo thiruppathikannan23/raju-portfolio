@@ -1,4 +1,4 @@
-import React, { ugit initseState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 import { Play, Menu, X, Zap, ArrowUpRight } from 'lucide-react';
 
